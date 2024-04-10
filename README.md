@@ -7,7 +7,7 @@ fully adaptive and capable of handling evolving data streams.
 
 ------
 
-![](.\notebooks\images\i.png)
+![MGB-Steam](/notebooks/images/i.png)
 
 MGB-Stream is constructed on four core components: the Initialization Module (IM) is responsible for generating initial 𝑀𝐺𝐵𝑠; the Update Module (UM) handles the continuous updating of 𝑀𝐺𝐵𝑠; the Update and Elimination Module (EM) is tasked with the updating of the weights and the elimination of the old historical data; finally, the Clustering Module (CM) is responsible for integrating 𝑀𝐺𝐵𝑠 to form the final clusters when a clustering request is received. In the entire life cycle of the algorithm, it is divided into two vertical phases: initialization and maintenance. Meanwhile, in terms of operational flow, it is distinguished into online and offline phases: the online phase involves the updating of 𝑀𝐺𝐵𝑠 by the UM component, as well as the adjustment of the weights and the elimination of the historical data by the EM component; while in the offline phase, the CM component handles the clustering requests in order to generate the macro clusters.
 
